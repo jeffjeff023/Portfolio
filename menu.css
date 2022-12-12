@@ -1,0 +1,63 @@
+.navbar {
+  overflow: hidden;
+  background-color: inherit;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 14rem 0 14rem;
+  align-items: center;
+  font-family: "Zen Dot", sans-serif;
+  z-index: 2;
+}
+
+.menu {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  padding: 0;
+  justify-items: flex-end;
+}
+
+.line {
+  fill: none;
+  stroke: rgb(43, 46, 255);
+  stroke-width: 4;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 4;
+}
+
+.line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 4;
+}
+
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 4;
+}
+
+.opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 4;
+}
+
+.opened .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 4;
+}
+
+.opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 4;
+}

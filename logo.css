@@ -1,0 +1,15 @@
+a {
+  transition: 0.5s ease-out;
+}
+
+.logo {
+  text-decoration: none;
+  font-size: 4rem;
+  transform: scaleX(-1);
+  display: flex;
+  color: black;
+}
+
+.logo > p {
+  transform: scaleX(-1);
+}
