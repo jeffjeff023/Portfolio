@@ -105,16 +105,23 @@
   display: grid;
   grid-template-areas: "bbr-left bbr-right";
   justify-items: flex-end;
-  text-decoration: none;
   text-transform: uppercase;
 }
 
-.bottombox-right h4 {
-  font-size: 2.5rem;
-  letter-spacing: 2px;
+.bbr-left, .bbr-right {
+  display: flex;
+  flex-direction: column;
 }
 
 .bottombox-right h3 {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+
+.bottombox-right a {
   font-size: 2rem;
   font-weight: 100;
+  text-decoration: none;
+  color: #d3d3d3;
 }
