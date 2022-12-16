@@ -48,7 +48,7 @@ body {
 
 
 .container p {
-  font-size: 1.2em;
+  font-size: 1vw;
   font-family: 'IBM Flex Sans', sans-serif;
   text-align: left;
   max-width: 20rem;
@@ -58,7 +58,7 @@ body {
 
 
 .box1 h3 {
-  font-size: 18rem;
+  font-size: 15vw;
   font-family: 'League Gothic', sans-serif;
   letter-spacing: -0.1px;
   text-transform: uppercase;
