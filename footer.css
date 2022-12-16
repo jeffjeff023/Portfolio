@@ -30,23 +30,35 @@
 
 .topbox {
   border-bottom: 1px solid #d3d3d3;
-  margin: 7rem 14rem 0 14rem;
+  margin: 5% 10% 0 10%;
   text-transform: uppercase;
   letter-spacing: 0.5em;
 }
 
 .topbox h2 {
   font-size: 5em;
+  display: flex;
+  justify-content: center;
 }
 
 .topbox h3 {
   font-size: 15em;
   font-weight: 100;
+  display: flex;
+  justify-content: center;
+}
+
+.topbox a {
+  font-size: 3em;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
 }
 
 .bottombox {
   border-bottom: 1px solid #d3d3d3;
-  margin: 0 14rem 7rem 14rem;
+  margin: 0 10% 5% 10%;
   padding-top: 3rem;
   display: grid;
   grid-template-areas:
@@ -125,3 +137,6 @@
   text-decoration: none;
   color: #d3d3d3;
 }
+
+
+

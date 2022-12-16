@@ -1,5 +1,6 @@
 a {
   transition: 0.5s ease-out;
+  opacity: 0.5;
 }
 
 .logo {
@@ -8,6 +9,7 @@ a {
   transform: scaleX(-1);
   display: flex;
   color: black;
+  margin-left: 10%;
 }
 
 .logo > p {

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=League+Gothic&family=Zen+Dots&display=swap');
 
 * {
     margin: 0;
@@ -21,12 +21,6 @@ body {
 h2 {
     font-size: 5em;
 }
-
-.container-1 h2, .container-2 h2, .container-3 h2 {
-    animation-name: scroll;
-    animation-duration: 5s;
-    animation-delay: 2s;
-  }
 
 .container-1 {
     width: 100%;
@@ -59,4 +53,44 @@ h2 {
     justify-content: center;
     letter-spacing: 10px;
     text-transform: uppercase;
+}
+
+
+@media (max-width: 320px) {
+    h2 {
+        font-size: 2.5em;
+    }
+
+    .container-1 {
+        width: 320px;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+    }
+    
+    .container-2 {
+        width: 320px;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: grey;
+        color: white;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+    }
+    
+    .container-3 {
+        width: 320px;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+    }
 }

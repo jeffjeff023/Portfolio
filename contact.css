@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=League+Gothic&family=Zen+Dots&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=League+Gothic&family=Zen+Dots&display=swap');
 
 * {
   margin: 0;
@@ -18,13 +18,122 @@ body {
     min-height: 100vh;
 }
 
-.container {
-    width: 100%;
-    height: 100vh;
+.main-container1 {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  height: 100vh;
+}
+
+.container1 h2 {
+  font-size: 18rem;
+  letter-spacing: -0.09vw;
+  text-align: center;
+  width: 50rem;
+  margin: 0 7rem;
+}
+
+.main-container {
+    width: 80vw;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    overflow: hidden;
+    /* overflow: hidden; */
     letter-spacing: 10px;
     text-transform: uppercase;
+    flex-direction: column;
+}
+
+.container {
+  display: flex;
+}
+
+.box1 {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0.5rem;
+}
+
+.box2 {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0.5rem;
+}
+
+.box3 {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0.5rem;
+}
+
+.button {
+  text-decoration: none;
+  max-width: 11rem;
+  margin-top: 1rem;
+  padding: .5em 2.5em;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  color: #000;
+  background-color: #d3d3d3;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.button:hover {
+  background-color: rgba(43, 47, 255, 0.753);
+  box-shadow: 0px 8px 20px rgb(43, 46, 255);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.button:active {
+  transform: translateY(-1px);
+}
+
+label {
+  letter-spacing: 3px;
+  margin-bottom: 5px;
+  font-size: 1.7em;
+}
+
+input {
+  width: 20vw;
+  margin-bottom: 2vw;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+textarea {
+  width: 41.1vw;
+  min-height: 12vw;
+  max-height: 20vw;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+@media (max-width: 1124px) {
+  .main-container1 {
+    display: block;
+  }
+
+  .container1 h2 {
+    margin: 0;
+    width: 100%;
+    font-size: 10vw;
+    margin-top: 5%;
+    margin-bottom: 1%;
+  }
+
+  .main-container {
+    align-items: center;
+    width: 100%;
+  }
+  
 }

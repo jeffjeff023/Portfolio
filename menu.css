@@ -6,19 +6,18 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 1rem 14rem 0 14rem;
   align-items: center;
   font-family: "Zen Dot", sans-serif;
   z-index: 2;
+  margin-top: 1%;
 }
 
 .menu {
   background-color: transparent;
   border: none;
   cursor: pointer;
-  display: flex;
   padding: 0;
-  justify-items: flex-end;
+  margin-right: 10%;
 }
 
 .line {

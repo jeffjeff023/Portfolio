@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=League+Gothic&family=Zen+Dots&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=League+Gothic&family=Zen+Dots&display=swap');
 
 * {
   margin: 0;
@@ -25,6 +25,49 @@ body {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  letter-spacing: 10px;
+  flex-direction: column;
+  position: relative;
+  background-color: white;
+  z-index: -2;
+}
+
+.box2 {
+  display: flex;
+}
+
+.box1 img {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+}
+
+
+.container p {
+  font-size: 1.2em;
+  font-family: 'IBM Flex Sans', sans-serif;
+  text-align: left;
+  max-width: 20rem;
+  margin: 0 25rem;
+}
+
+
+
+.box1 h3 {
+  font-size: 18rem;
+  font-family: 'League Gothic', sans-serif;
+  letter-spacing: -0.1px;
   text-transform: uppercase;
+  max-width: 100rem;
+  text-align: center;
+  color: black;
+}
+
+.box1 h3 span {
+  text-transform: none;
+  color: #d3d3d3; 
 }

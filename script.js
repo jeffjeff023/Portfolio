@@ -18,11 +18,13 @@ const toggleNav = () => {
   const open = () => {
     document.getElementById("myNav").style.height = '100%';
     document.getElementById("logo").style.color = '#d3d3d3';
+    document.getElementById("logo").style.opacity = 1;
   }
   
   const close = () => {
     document.getElementById("myNav").style.height = "0";
     document.getElementById("logo").style.color = 'black';
+    document.getElementById("logo").style.opacity = 0.5;
   }
 
   const collapse = () => {

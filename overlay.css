@@ -25,8 +25,8 @@
     text-align: center;
     font-family: 'League Gothic', sans-serif;
     text-transform: uppercase;
-    grid-column-gap: 1.5em;
-    grid-row-gap: 4.5rem;
+    column-gap: 1.5em;
+    row-gap: 4.5rem;
     margin-top: 10rem;
 
   }
@@ -42,11 +42,4 @@
   
   .overlay a:hover, .overlay a:focus {
     color: #f1f1f1;
-  }
-
-  @media (max-width: 425px) {
-    .overlay-content {
-      display: flex;
-      flex-direction: column;
-    }
   }
