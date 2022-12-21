@@ -24,7 +24,6 @@ const toggleNav = () => {
   const close = () => {
     document.getElementById("myNav").style.height = "0";
     document.getElementById("logo").style.color = 'black';
-    document.getElementById("logo").style.opacity = 0.5;
   }
 
   const collapse = () => {

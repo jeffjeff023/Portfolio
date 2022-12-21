@@ -200,6 +200,7 @@
       cursor: pointer;
       outline: none;
       text-align: center;
+      margin-top: 10%;
     }
     
     .bottombox-left #button:hover {

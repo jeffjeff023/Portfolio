@@ -264,6 +264,7 @@
 
   /* Footer */
 
+
   @media (min-width: 321px) and (max-width: 425px) {
     .container-4 {
       display: grid;
@@ -334,6 +335,7 @@
       cursor: pointer;
       outline: none;
       text-align: center;
+      margin-top: 10%;
     }
     
     .bottombox-left #button:hover {
@@ -387,6 +389,7 @@
   }
 
   @media (max-width: 320px) {
+
     .container-4 {
       display: grid;
       grid-template-areas:
@@ -456,6 +459,7 @@
       cursor: pointer;
       outline: none;
       text-align: center;
+      margin-top: 10%;
     }
     
     .bottombox-left #button:hover {

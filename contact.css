@@ -18,54 +18,85 @@ body {
     min-height: 100vh;
 }
 
-.main-container1 {
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  letter-spacing: 10px;
-  text-transform: uppercase;
-  height: 100vh;
-}
-
-.container1 h2 {
-  font-size: 18rem;
-  letter-spacing: -0.09vw;
-  text-align: center;
-  width: 50rem;
-  margin: 0 7rem;
-}
-
 .main-container {
-    width: 80vw;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    /* overflow: hidden; */
-    letter-spacing: 10px;
-    text-transform: uppercase;
-    flex-direction: column;
-}
-
-.container {
   display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2rem;
+  animation: onload 2s;
 }
 
-.box1 {
+@keyframes onload {
+  0% {
+    opacity: 0;
+  } 
+
+  50% {
+    opacity: 0;
+  }
+    
+  100% {
+    opacity: 1;
+  }
+}
+
+.text h2 {
+  font-size: 10rem;
+  text-transform: uppercase;
+}
+
+.main-container .form {
   display: flex;
   flex-direction: column;
-  margin: 0 0.5rem;
+  align-items: flex-start;
 }
 
-.box2 {
+.main-container .topbox {
   display: flex;
-  flex-direction: column;
-  margin: 0 0.5rem;
+  margin: 0;
+  letter-spacing: 2px;
+  gap: 2rem;
+  border: none;
+  font-size: 2rem;
+  width: 75%;
 }
 
-.box3 {
+.topbox .name {
   display: flex;
   flex-direction: column;
-  margin: 0 0.5rem;
+}
+
+.topbox .email {
+  display: flex;
+  flex-direction: column;
+}
+
+.topbox input {
+  font-size: 2rem;
+  padding: 1rem 7rem 7px 1rem;
+}
+
+.form .bottombox {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  margin: 1rem 0 0 0;
+  padding: 0;
+}
+
+.bottombox label {
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.bottombox textarea {
+  font-size: 2rem;
+  padding-left: 7px;
+  resize: none;
+  padding: 1rem 7rem 7px 1rem;
+  width: 164%;
 }
 
 .button {
@@ -97,43 +128,61 @@ body {
   transform: translateY(-1px);
 }
 
-label {
-  letter-spacing: 3px;
-  margin-bottom: 5px;
-  font-size: 1.7em;
-}
-
-input {
-  width: 20vw;
-  margin-bottom: 2vw;
-  font-size: 2rem;
-  padding: 1rem;
-}
-
-textarea {
-  width: 41.1vw;
-  min-height: 12vw;
-  max-height: 20vw;
-  font-size: 2rem;
-  padding: 1rem;
-}
-
-@media (max-width: 1124px) {
-  .main-container1 {
-    display: block;
-  }
-
-  .container1 h2 {
-    margin: 0;
-    width: 100%;
-    font-size: 10vw;
-    margin-top: 5%;
-    margin-bottom: 1%;
-  }
-
+@media (max-width: 896px) {
   .main-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
     align-items: center;
-    width: 100%;
+    justify-content: center;
+    gap: 2rem;
   }
   
+  .text h2 {
+    font-size: 6rem;
+    text-transform: uppercase;
+  }
+  
+  .main-container .form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .main-container .topbox {
+    display: flex;
+    margin: 0;
+    letter-spacing: 2px;
+    gap: 2rem;
+    border: none;
+    font-size: 2rem;
+    width: 75%;
+  }
+  
+  .topbox input {
+    font-size: 2rem;
+    padding: 1rem 7rem 7px 1rem;
+  }
+  
+  .form .bottombox {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    margin: 1rem 0 0 0;
+    padding: 0;
+  }
+  
+  .bottombox label {
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .bottombox textarea {
+    font-size: 2rem;
+    padding-left: 7px;
+    resize: none;
+    padding: 1rem 7rem 7px 1rem;
+    width: 164%;
+  }
 }

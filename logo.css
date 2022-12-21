@@ -1,6 +1,5 @@
 a {
   transition: 0.5s ease-out;
-  opacity: 0.5;
 }
 
 .logo {
@@ -10,8 +9,36 @@ a {
   display: flex;
   color: black;
   margin-left: 10%;
+  animation: fadein 2s;
 }
 
 .logo > p {
   transform: scaleX(-1);
+}
+
+.logo:hover {
+  scale: 1.1;
+}
+
+
+@keyframes fadein {
+  0% {
+      opacity: 0;
+  }
+  
+  25% {
+      opacity: 0;
+  }
+
+  50% {
+      opacity: 0;
+  }
+  
+  75% {
+      opacity: 1;
+  }
+  
+  100% {
+      opacity: 1;
+  }
 }
