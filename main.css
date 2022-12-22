@@ -8,7 +8,6 @@
 }
 
 html {
-    color-scheme: dark light;
     font-size: 10px;
     font-family: 'League Gothic', sans-serif;
     scroll-behavior: smooth;
@@ -22,9 +21,20 @@ h2 {
     font-size: 5em;
 }
 
+.text.show {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.text {
+    opacity: 0;
+    transition: 150ms;
+    transform: translateX(100px);
+}
+
 .loading-screen {
-    height: 200%;
-    width: 200%;
+    height: 100%;
+    width: 100%;
     position: absolute;
     border-radius: 50%;
     animation: loadup 2s;
@@ -34,33 +44,24 @@ h2 {
 @keyframes loadup {
     0% {
         background-color: black;
-        top: 100%;
-        left: -50%;
+        top: 150%;
+        left: 0%;
+        scale: 2;
     }
 
-    25% {
+    25%, 50%, 75% {
         top: 0%;
-        left: -50%;
+        left: 0%;
         background-color: black;
-    }
-
-    50% {
-        top: 0%;
-        left: -50%;
-        background-color: black;
-    }
-
-    75% {
-        top: 0%;
-        left: -50%;
-        background-color: black;
+        scale: 2;
     }
 
     100% {
         top: 0%;
-        left: -50%;
+        left: 0%;
         background-color: inherit;
         border-radius: 0%;
+        scale: 2;
     }
     
 }
@@ -74,6 +75,7 @@ h2 {
     flex-direction: column;
     gap: 1rem;
     animation: fadein 2s;
+    
 }
 
 @keyframes fadein {
@@ -103,6 +105,7 @@ h2 {
     display: flex;
     align-items: center;
     gap: 2rem;
+    
 }
 
 .container-0 h1 {
@@ -158,9 +161,6 @@ h2 {
 
 
  .container-0 .line {
-    width: 2px;
-    height: 5px;
-    background-color: #333;
     animation: line-animation 2s;
     animation-iteration-count: infinite;
     position: absolute;
@@ -169,19 +169,16 @@ h2 {
   }
 
 @keyframes line-animation {
-    /* Set the starting state (hidden) */
+
     0% {
-      height: 0;
       opacity: 0;
     }
 
     25% {
-        height: 50px;
         opacity: 1;
     }
 
     50% {
-        height: 50px;
         opacity: 1;
     }
 
@@ -283,19 +280,16 @@ h2 {
     }
 
     @keyframes line-animation {
-        /* Set the starting state (hidden) */
         0% {
           height: 0;
           opacity: 0;
         }
     
         25% {
-            height: 30px;
             opacity: 1;
         }
     
         50% {
-            height: 30px;
             opacity: 1;
         }
     

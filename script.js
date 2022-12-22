@@ -29,3 +29,36 @@ const toggleNav = () => {
   const collapse = () => {
     return close();
   }
+
+const texts = document.querySelectorAll('.text')
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      entry.target.classList.toggle("show", entry.isIntersecting)
+    })
+  },
+  {
+    threshold: 1,
+  }
+  )
+
+  texts.forEach(text => {
+    observer.observe(text)
+  })
+
+  const messages = document.querySelectorAll('.message')
+console.log(messages)
+  const observer1 = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      entry.target.classList.toggle("animate", entry.isIntersecting)
+      if (entry.isIntersecting) observer1.unobserve(entry.target)
+    })
+  },
+  {
+    threshold: 1,
+  }
+  )
+
+  messages.forEach(message => {
+    observer1.observe(message)
+  })
