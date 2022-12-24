@@ -92,10 +92,9 @@ body {
 
 .bottombox textarea {
   font-size: 2rem;
-  padding-left: 7px;
   resize: none;
   padding: 1rem 7rem 7px 1rem;
-  width: 164%;
+  width: 100%;
 }
 
 .button {
@@ -179,7 +178,6 @@ body {
   
   .bottombox textarea {
     font-size: 2rem;
-    padding-left: 7px;
     resize: none;
     padding: 1rem 7rem 7px 1rem;
     width: 164%;

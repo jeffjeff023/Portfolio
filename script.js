@@ -47,7 +47,7 @@ const texts = document.querySelectorAll('.text')
   })
 
   const messages = document.querySelectorAll('.message')
-console.log(messages)
+
   const observer1 = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       entry.target.classList.toggle("animate", entry.isIntersecting)
@@ -62,3 +62,22 @@ console.log(messages)
   messages.forEach(message => {
     observer1.observe(message)
   })
+
+  const info = document.querySelectorAll('.me')
+  
+  const observer2 = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      entry.target.classList.toggle("animate_2", entry.isIntersecting)
+      if (entry.isIntersecting) observer2.unobserve(entry.target)
+    })
+  },
+  {
+    threshold: 1,
+  }
+  )
+
+  info.forEach(me => {
+    observer2.observe(me)
+  })
+
+  

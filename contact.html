@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="logo.css" />
     <link rel="stylesheet" href="contact.css" />
     <link rel="stylesheet" href="footer.css" />
-    <link rel="stylesheet" href="media-css-tablet.css">
-    <link rel="stylesheet" href="media-css-mobile.css">
+    <link rel="stylesheet" href="media-css-tablet.css" />
+    <link rel="stylesheet" href="media-css-mobile.css" />
   </head>
   <body>
     <header class="navbar">
@@ -57,32 +57,32 @@
       <div class="text">
         <h2>let's get in touch</h2>
       </div>
-      
-      <div class="form">
+
+      <form id="form">
         <div class="topbox">
           <div class="name">
             <label for="name">Full Name</label>
-            <input type="text" name="name" placeholder="Joffrey Acula" />
+            <input class="fullName" type="text" name="name" placeholder="Joffrey Acula" />
           </div>
-            
-    <div class="email">
-      <label for="email">Email Address</label>
-      <input type="text" name="email" placeholder="example@gmail.com" />
-    </div>
+
+          <div class="email">
+            <label for="email">Email Address</label>
+            <input class="emailAddress" type="email" name="email" placeholder="example@gmail.com" />
+          </div>
         </div>
         <div class="bottombox">
           <label for="message">Message</label>
           <textarea
             name="message"
-            id=""
             cols="30"
             rows="10"
             placeholder="Write your message here..."
+            class="messageMe"
           ></textarea>
-          <button class="button" id="button">Send</button>
+          <button class="button" id="button" type="submit" form="form">Send</button>
         </div>
-        </div>
-      </div>
+      </form>
+    </div>
     <!-- footer -->
 
     <div class="container-4">

@@ -153,7 +153,6 @@
 .container-4 .bottombox .bottombox-left .logo2 {
   text-decoration: none;
   color: #d3d3d3;
-  text-decoration: none;
   font-size: 4rem;
   transform: scaleX(-1);
   display: flex;
@@ -189,6 +188,3 @@
   text-decoration: none;
   color: #d3d3d3;
 }
-
-
-
