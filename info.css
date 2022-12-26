@@ -1,23 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=League+Gothic&family=Zen+Dots&display=swap');
 
-.me {
-  opacity: 0;
-}
-
-.me.animate_2 {
-  animation: load 2s forwards;
-}
-
-@keyframes load {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -35,74 +17,6 @@ body {
     min-height: 100vh;
 }
 
-img {
-  max-width: 100%;
-  display: block;
-}
-
-.main__container {
-  height: 100vh;
-  display: grid;
-  align-items: center;
-}
-
-.person {
-  --transform-speed: 250ms;
-  position: relative;
-  max-width: 15rem;
-  margin-inline: auto;
-  cursor: pointer;
-}
-
-.person__container {
-  aspect-ratio: 1 / 1.35;
-  display: grid;
-  align-items: end;
-  border-radius: 0 0 100vw 100vw;
-  overflow: hidden;
-  transition: transform var(--transform-speed) ease;
-  animation: onload 2s;
-}
-
-@keyframes onload {
-  0% {
-    opacity: 0;
-  } 
-
-  50% {
-    opacity: 0;
-  }
-    
-  100% {
-    opacity: 1;
-  }
-}
-
-.person__container:hover {
-  transform: scale(1.2);
-  z-index: -1;
-}
-
-.person__circle {
-  position: absolute;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  width: 100%;
-  inset: auto 0 0;
-  margin-inline: auto;
-  border-radius: 50%;
-}
-
-.person__img {
-  position: relative;
-  top: 2rem;
-  transition: transform calc(var(--transform-speed) * 1.2) ease;
-}
-
-.person__container:hover .person__img {
-  transform: translateY(-2rem);
-}
-
 .container {
   width: 100%;
   height: 100vh;
@@ -112,6 +26,17 @@ img {
   overflow: hidden;
   flex-direction: column;
   position: relative;
+  animation: onload 2s;
+}
+
+@keyframes onload {
+  0% {
+    opacity: 0;
+  } 
+    
+  100% {
+    opacity: 1;
+  }
 }
 
 .box2 {

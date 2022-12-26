@@ -37,8 +37,7 @@ h2 {
     width: 100%;
     position: absolute;
     border-radius: 50%;
-    animation: loadup 2s;
-    transition: ease-in;
+    animation: loadup 4s ease-in-out;
 }
 
 @keyframes loadup {
@@ -74,7 +73,7 @@ h2 {
     align-items: center;
     flex-direction: column;
     gap: 1rem;
-    animation: fadein 2s;
+    animation: fadein 4s;
     
 }
 
@@ -160,7 +159,7 @@ h2 {
 }
 
 
- .container-0 .line {
+ .container-0 .arrowDown  {
     animation: line-animation 2s;
     animation-iteration-count: infinite;
     position: absolute;

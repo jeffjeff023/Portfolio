@@ -43,7 +43,7 @@
     <nav>
       <div id="myNav" class="overlay">
         <div class="overlay-content">
-          <a href="index.html" onclick="collapse()" class="home">home</a>
+          <a href="home.html" onclick="collapse()" class="home">home</a>
           <a href="works.html" onclick="collapse()" class="works">works</a>
           <a href="info.html" onclick="collapse()" class="info">info</a>
           <a href="contact.html" onclick="collapse()" class="contact"
@@ -58,16 +58,16 @@
         <h2>let's get in touch</h2>
       </div>
 
-      <form id="form">
+      <form id="contactForm" name="contactForm" onsubmit="return validateForm(event)">
         <div class="topbox">
           <div class="name">
             <label for="name">Full Name</label>
-            <input class="fullName" type="text" name="name" placeholder="Joffrey Acula" />
+            <input id="fullName" type="text" name="name" placeholder="Joffrey Acula" />
           </div>
 
           <div class="email">
             <label for="email">Email Address</label>
-            <input class="emailAddress" type="email" name="email" placeholder="example@gmail.com" />
+            <input id="emailAddress" type="email" name="email" placeholder="example@gmail.com" />
           </div>
         </div>
         <div class="bottombox">
@@ -77,9 +77,9 @@
             cols="30"
             rows="10"
             placeholder="Write your message here..."
-            class="messageMe"
+            id="messageMe"
           ></textarea>
-          <button class="button" id="button" type="submit" form="form">Send</button>
+          <button class="button" id="button" type="submit" form="contactForm">Send</button>
         </div>
       </form>
     </div>
@@ -88,8 +88,8 @@
     <div class="container-4">
       <div class="topbox">
         <h2>Are you ready?</h2>
-        <h3>Get in touch</h3>
-        <a class="message" id="message-me" href="contact.html">Message me</a>
+        <h3 class="message">Get in touch</h3>
+        <a id="message-me" href="contact.html">Message me</a>
       </div>
 
       <div class="bottombox">
@@ -107,21 +107,23 @@
         <div class="bottombox-right">
           <div class="bbr-left">
             <h3>site map</h3>
-            <a href="index.html">home</a>
+            <a href="home.html">home</a>
             <a href="works.html">work</a>
             <a href="info.html">info</a>
             <a href="contact.html">contact</a>
           </div>
           <div class="bbr-right">
             <h3>social</h3>
-            <a href="#">LinkedIn</a>
-            <a href="#">Facebook</a>
-            <a href="#">Instagram</a>
-            <a href="#">Twitter</a>
+            <a href="https://www.linkedin.com/in/joffrey-acula-0667b3220" target="_blank">LinkedIn</a>
+            <a href="https://www.facebook.com/joffreyacula" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/joff_jeff/" target="_blank">Instagram</a>
+            <a href="https://twitter.com/j0ffjeff" target="_blank">Twitter</a>
           </div>
         </div>
       </div>
     </div>
   </body>
+  <script src="form.js"></script>
   <script src="script.js"></script>
+  
 </html>

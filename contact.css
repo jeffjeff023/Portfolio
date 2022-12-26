@@ -17,6 +17,15 @@ body {
     min-height: 100vh;
 }
 
+.messageMessage {
+  font-size: 5rem;
+}
+
+.afterMessage .button  {
+  font-size: 2rem;
+  min-width: 20rem;
+}
+
 .main-container {
   display: flex;
   height: 100vh;

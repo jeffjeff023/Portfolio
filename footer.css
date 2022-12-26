@@ -61,6 +61,7 @@
 
 .message.animate {
   animation: shake 2s;
+  user-select: none;
 }
 
 @keyframes shake {
